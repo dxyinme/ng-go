@@ -13,6 +13,7 @@ var (
 	addr = flag.String("addr", ":11015", "file server port")
 	)
 func main() {
+	flag.Parse()
 	if *dir == "" {
 		fmt.Println("no root dir")
 		return
